@@ -19,13 +19,13 @@
 
     <!-- Facebook Open Graph markup -->
     <meta property="og:locale" content="fr_FR">
-    <meta property="og:url" content=""> <!--WIP add URl -->
+    <meta property="og:url" content=""> <!--TODO add URl -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="USN76 équipe de foot sur les villes soeurs">
-    <meta name="og:email" content=""/> <!--WIP add email address -->
+    <meta name="og:email" content=""/> <!--TODO add email address -->
     <meta property="og:description"
           content="L'USN76 est un club de foot basé sur la communauté de commune des villes soeurs région normandie, avec des équipes allant de la U7 au senior en passant par l'équipe feminine.">
-    <meta property="og:image" content=""> <!--WIP add image -->
+    <meta property="og:image" content=""> <!--TODO add image -->
 
     <link rel="stylesheet" href="CSS/style.css">
     <title>USN 76</title>
