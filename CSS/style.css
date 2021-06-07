@@ -9,10 +9,19 @@
     padding: 0;
  }
 
+@font-face {
+    font-family: "JetBrains Mono Medium";
+    src: url(/CSS/font/jetbrainsmono/jetbrainsmono-medium.woff2);
+}
+
 body{
     background-color: var(--bg);
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
 .navbar{
     display: flex;
     flex-direction: column;
@@ -34,6 +43,7 @@ body{
 }
 
 .navbar ul li a{
+    font-family: "JetBrains Mono Medium", sans-serif;
     color: var(--texte);
     text-decoration: none;
 }

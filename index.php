@@ -27,11 +27,18 @@
               content="L'USN76 est un club de foot basé sur la communauté de commune des villes soeurs région normandie, avec des équipes allant de la U7 au senior en passant par l'équipe feminine.">
         <meta property="og:image" content=""> <!--TODO add image -->
 
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="images/favicons/site.webmanifest">
+
         <link rel="stylesheet" href="CSS/style.css">
+
         <title>USN 76</title>
     </head>
     <body>
-        <div class="navbar">
+    <div class="wrapper">
+        <div class="navbar"> <!-- TODO responsive -->
             <ul>
                 <li><img src="images/logo-USN76.png" height="300" alt="Logo"></li>
                 <li class="active"><a href="index.php">Accueil</li>
@@ -41,5 +48,10 @@
                 <li><a href="index.php">Contact</li>
             </ul>
         </div>
+
+        <main>
+            <h1>Le club</h1>
+        </main>
+    </div>
     </body>
 </html>
