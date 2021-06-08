@@ -1,21 +1,21 @@
-:root{
+:root {
     --bg: black;
     --accent: #E62C1F;
     --texte: white;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: "JetBrains Mono Medium", sans-serif;
- }
+}
 
 @font-face {
     font-family: "JetBrains Mono Medium";
     src: url(/CSS/font/jetbrainsmono/jetbrainsmono-medium.woff2);
 }
 
-body{
+body {
     background-color: var(--bg);
 }
 
@@ -23,21 +23,23 @@ body{
     display: flex;
     flex-direction: row;
 }
-.navbar{
+
+.navbar {
     display: flex;
     flex-direction: column;
-    width:15vw;
+    width: 15vw;
     height: 100vh;
     align-items: center;
     justify-content: center;
     background-color: var(--accent);
     position: fixed;
- }
-.navbar ul img{
-    width: 18vw;
- }
+}
 
-.navbar ul{
+.navbar ul img {
+    width: 18vw;
+}
+
+.navbar ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,7 +49,7 @@ body{
     margin-bottom: 4.5vw;
 }
 
-.navbar ul li a{
+.navbar ul li a {
     color: var(--texte);
     font-size: 2.5vw;
     text-decoration: none;
@@ -74,9 +76,9 @@ body{
     width: inherit;
     margin-top: 5vh;
     background-color: var(--accent);
- }
+}
 
-.main p{
+.main p {
     padding: 15px;
     color: var(--texte);
 }
