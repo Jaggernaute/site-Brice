@@ -1,0 +1,12 @@
+#404
+
+ErrorDocument 404 /index.php
+
+
+#url rewrite
+
+RewriteEngine on
+RewriteCond % ^http://.*example.com [NC,OR]
+RewriteCond % ^http://.*anotherexample.com [NC,OR]
+RewriteCond % ^http://.*onemoreexample.com [NC]
+RewriteRule .* - [F]

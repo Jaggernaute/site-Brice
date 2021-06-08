@@ -6,13 +6,14 @@
     $mail = htmlspecialchars($_POST["mail"]);
     $password = htmlspecialchars($_POST["password"]);
 
+    $hashed = hash('sha512', $password);
     /**
     * @global PDO $conn
     */
     try {
         $sql = 'insert into user (fname, name, email, password) values (:LName, :Name, :mail, :password)';
         $stmt = $conn->prepare($sql);
-        $stmt->execute([':LName' => $LName, ':Name' => $Name, ':mail' => $mail, 'password' => $password]);
+        $stmt->execute([':LName' => $LName, ':Name' => $Name, ':mail' => $mail, 'password' => $hashed]);
 
       echo "New record created successfully";
     } catch(PDOException $e) {

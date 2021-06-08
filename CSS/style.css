@@ -76,11 +76,33 @@ body {
     width: inherit;
     margin-top: 5vh;
     background-color: var(--accent);
+    padding: 15px;
 }
 
 .main p {
-    padding: 15px;
+    padding: 30px;
+    font-size: 1.75vh;
     color: var(--texte);
+}
+
+.main-content-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-content-wrapper img {
+    display: flex;
+    margin-top: 50px;
+    height: 20vw;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+}
+
+footer img{
+    height: 150px;
 }
 
 /* width */
