@@ -40,18 +40,29 @@
     <div class="wrapper">
         <div class="navbar"> <!-- TODO responsive -->
             <ul>
-                <li><img src="images/logo-USN76.png" height="300" alt="Logo"></li>
-                <li class="active"><a href="index.php">Accueil</li>
-                <li><a href="index.php">Equipes</li>
-                <li><a href="index.php">Actus</li>
-                <li><a href="index.php">Tarifs</li>
-                <li><a href="index.php">Contact</li>
+                <li><img src="images/logo-USN76.png" alt="Logo"></li>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="index.php">Equipes</a></li>
+                <li><a href="index.php">Actus</a></li>
+                <li><a href="index.php">Tarifs</a></li>
+                <li><a href="index.php">Contact</a></li>
             </ul>
         </div>
 
-        <main>
-            <h1>Le club</h1>
-        </main>
+        <div class="main" id="accueil">
+            <div class="titre">
+                <h1>Le Club</h1>
+            </div>
+            <p>
+                L'US Normande 76 a été créé en 2016 et regroupe les communes de St Pierre en Val, St Remy Boscrocourt, Baromesnil, Bouvaincourt sur Bresle et Le Mesnil Réaume.
+                Les principaux objectifs sont de maintenir et d'amplifier la pratique du football dans nos communes rurales, de participer à l'éducation des jeunes, de maintenir un tissu social et associatif et de garantir l'utilisation des équipements sportifs mis à disposition par les municipalités.
+                Notre club comprend actuellement 2 équipes sénior masculines (1ère et 2e division de district), 1 équipe sénior féminine, les catégories jeunes U7, U9, U13, U15 mixtes ainsi qu’une équipe U18 masculine.
+                Notre objectif est d’offrir aux adhérents un accueil chaleureux et convivial dans un cadre familial mais néanmoins ambitieux.
+                Nous souhaitons en effet jouer un rôle social et fédérateur dans nos villages et promouvoir ainsi le football local dans un esprit sportif aux valeurs éducatives affirmées.
+                L’US Normande se développe constamment et organise régulièrement des tournois pour les jeunes (en salle en en extérieur), propose des stages pendant les vacances scolaires à destination des jeunes de 4 à 16 ans totalement gratuits et ouverts aux licenciés et aux non licenciés, effectue chaque année un tournoi de sixte (adulte) en juillet ainsi que différentes autres manifestations (soirées à thème, marche dinatoire, loto de Noël, vente de calendrier par exemple).
+                Par ailleurs, le club recrute et forme chaque année ses éducateurs bénévoles auprès de la Fédération Française de Football .
+            </p>
+        </div>
     </div>
     </body>
 </html>
