@@ -1,6 +1,8 @@
 <?php
 require "conn-core.php";
 
+var_dump($_POST);
+
 $mail = htmlspecialchars($_POST["mail"]);
 $password = htmlspecialchars($_POST["password"]);
     /**
@@ -13,29 +15,19 @@ $password = htmlspecialchars($_POST["password"]);
         $param = [':mail' => $mail, ':password' => hash('sha512', $password)];
         $stmt = $conn->prepare($sql);
         $stmt->execute($param);
-
-        $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        var_dump($result);
 
         if ($stmt->rowCount() > 0) {
-            $sql = 'select privileges from user where email = :mail';
-            $param = [':mail' => $mail];
-            $stmt = $conn->prepare($sql);
-            $stmt->execute($param);
-            $result = $stmt->fetch();
-
             if($result['privileges'] == "1"){
                 session_start();
                 $_SESSION['admin']="admin_session";
-                define('USER', 'user');
-
                 header('Location: https://esn76.test/app/dashboard.php');
                 exit;
 
             } elseif($result['privileges'] == "2"){
                 session_start();
-                $_SESSION['user']="user_session";
-                $_GLOBALS['USER'] = 'user';
-
+                $_SESSION['user']="user_session";;
                 header('Location: https://esn76.test/app/dashboard.php');
                 exit;
             }elseif($result['privileges'] == "3"){
@@ -43,7 +35,6 @@ $password = htmlspecialchars($_POST["password"]);
             }
         } else {
             echo "c'est pô le bon password fdp";
-            var_dump($_SESSION['admin']);
         }
     }catch(PDOException $e) {
         echo $sql . "<br>" . $e->getMessage();
